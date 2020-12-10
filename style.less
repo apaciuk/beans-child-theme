@@ -1,0 +1,295 @@
+/*
+ * In this file, you may style your site using CSS or LESS as well as overwrite UIkit LESS variables.
+ * Make sure to enable development mode via the Admin->Appearance->Settings option while working on your website. LESS will then be processed on the fly.
+ */
+/* Global colors */
+@global-link-color: #606060;
+@global-link-hover-color: rgba(173, 52, 61, 0.8);
+@base-body-font-family: Montserrat, sans-serif;
+@base-heading-font-family: Montserrat, sans-serif;
+@global-primary-color: rgba(173, 52, 61, 0.8);
+/*Buttons, Navs & Badges*/
+@global-primary-background: rgba(173, 52, 61, 0.8);
+@navbar-nav-hover-background: #f5f5f5;
+@navbar-nav-onclick-background: #f5f5f5;
+@navbar-nav-active-background:  rgba(173, 52, 61, 0.8);
+@navbar-nav-active-color: #fff;
+@global-success-background: #80b541;
+@global-warning-background: #ff9e15;
+@offwhite: #f2f2f2;
+/* Content Width */
+@utility-container-large-max-width: 1420px;
+.uk-nav {
+	padding: 10px;
+	ul {
+		padding: 10px;
+	}
+}
+
+
+
+div.vp-portfolio__items-arrow.vp-portfolio__items-arrow-next {
+	background-color: @global-primary-color;
+}
+div.vp-portfolio__items-arrow.vp-portfolio__items-arrow-prev {
+	background-color: @global-primary-color;
+}
+div.vp-portfolio__items-arrow.vp-portfolio__items-arrow-next {
+	color:@offwhite;
+}
+div.vp-portfolio__items-arrow.vp-portfolio__items-arrow-prev {
+	color:@offwhite;
+}
+/* Header */
+body {
+	>div.tm-site {
+		>header {
+			padding-top: 22px;
+			padding-bottom: 16px;
+	
+		}
+	}
+}
+/* Smart Slider */
+.wp-block-nextend-smartslider3 {
+	margin-top: 0 !important;
+}
+/* Site Logo img */
+body {
+	>div.tm-site {
+		>header {
+			>div {
+				>div {
+					>a {
+						>img {
+							margin-bottom: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* Site Description */
+body {
+	>div.tm-site {
+		>header {
+			>div {
+				>div {
+					>span {
+						text-transform: uppercase;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+/* Menu */
+#beans-primary-navigation {
+	font-family: 'Montserrat';
+	margin-top: 8px;
+}
+#menu-header-menu > li.menu-item.menu-item-type-post_type.menu-item-object-page {
+margin-right: 6px;
+margin-left:  6px;
+}
+/* Each menu item */
+.tm-primary-menu {
+	.menu-item {
+		> a {
+			border-radius: 8px!important;
+			font-size: 16px;
+		}
+	}
+}
+/* Sub Menu */
+.tm-primary-menu {
+	ul {
+		ul {
+			li {
+				&:hover {
+					a {
+						background: rgba(173, 52, 61, 0.8);
+					}
+				}
+			}
+		}
+	}
+}
+#menu-main-menu {
+	ul {
+		ul {
+			li {
+				&:hover {
+					a {
+						background: rgba(173, 52, 61, 0.8);
+					}
+				}
+			}
+		}
+	}
+}
+/* Search
+#menu-header-menu {
+	>li.uk-search.uk-medium-visible.uk-margin-large-left {
+		>form {
+			>input {
+				height: 36px;
+				border-radius: 16px 4px 16px 4px;
+			}
+		}
+	}
+}
+#offcanvas_menu {
+	>div {
+		>div.tm-widget.uk-panel.widget_search.search-3 {
+			>div {
+				>form {
+					>input {
+						height: 36px;
+						border-radius: 16px 4px 16px 4px;
+					}
+				}
+			}
+		}
+	}
+}
+#beans-primary-sidebar {
+	>div.tm-widget.uk-panel.widget_search.search-2 {
+		>div {
+			>form {
+				>input {
+					height: 36px;
+				    border-radius: 16px 4px 16px 4px;
+				}
+			}
+		}
+	}
+}*/
+/* Top of Pages */
+.uk-article {
+margin-top: 20px;
+}
+/*---- Footer ----*/
+/* Logo above footer */
+#logo-footer {
+    text-align:center;
+	padding-bottom: 30;
+}
+/* Social icons above footer */
+#social-footer {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Menu in footer */
+#menu-footer {
+	text-align:center;
+    padding-top: 0;
+	padding-bottom: 15px;
+}
+#menu-footer {
+	>div {
+		>div {
+			ul li {
+				display: inline;
+				padding-left: 8px;
+				padding-right:8px;
+			}
+		}
+	}
+}
+#menu-footer {
+	>div {
+		>div {
+			ul li a {
+			 font-size: 13px;
+			 text-decoration:none;
+			}
+		}
+	}
+}
+/* Footer */
+@top_bg-color-1:  #1f2022;
+@bottom_bg_color_1: #1b1c1e;
+@border_top_color_1: #333;
+@h3_color: #8f8f8f;
+body {
+	>div.tm-site {
+		>div {
+			padding-top: 60px;
+			padding-bottom: 40px;
+			background: @top_bg-color-1;
+       }
+	}
+}
+
+body {
+	>div.tm-site {
+		>footer {
+			background: @bottom_bg_color_1;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+	}
+}
+/* widget menu */
+h3.uk-panel-title {
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	color: @h3_color;
+}
+ul.menu {
+	padding-left: 3px;
+}
+ul.menu li {
+font-family: Montserrat, sans-serif;	
+}
+
+body > div.tm-site > div > div > div > div.uk-width-medium-1-4 ul {
+	list-style: none;
+}
+body > div.tm-site > div > div > div > div.uk-width-medium-1-4 ul li {
+color:#fff;
+margin-top: 15px;
+margin-bottom: 15px;
+padding-bottom: 11px;
+border-bottom: 1px solid #333;
+}
+body > div.tm-site > div > div > div > div.uk-width-medium-1-4 ul li:last-child {
+border-bottom: none;
+}
+body > div.tm-site > div > div > div > div.uk-width-medium-1-4 ul li a {
+text-decoration: none;
+}
+/* Footer bottom */
+body {
+	>div.tm-site {
+		>footer {
+			border-top-color: @border_top_color_1;
+		}
+	}
+}
+/* Copyright */
+.tm-sub-footer {
+	font-size: 12px;
+	margin: 8px 0 0 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	clear: both;
+	a {
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
